@@ -1,0 +1,44 @@
+| | | Js/App.JS | | |
+ const names = ["Pedro", "Sara", "Miriam", "Nestor", "Adrián", "Sandro"];
+
+ // Comprobación sin usar expresiones regulares
+ names.forEach(function(name) {
+   const firstLetter = name.at(0).toLowerCase();
+   const lastLetter = name.at(-1).toLowerCase();
+
+   if ((firstLetter === "p" || firstLetter === "s") && (lastLetter === "o" || lastLetter === "a")) {
+     console.log(`El nombre ${name} cumple las restricciones.`);
+   }
+});
+
+// Comprobación usando expresiones regulares
+ names.forEach(function(name) {
+   const regex = /^(p|s).+(o|a)$/i;
+
+   if (regex.test(name)) {
+     console.log(`El nombre ${name} cumple las restricciones.`);
+   }
+ });
+
+ <!--La palabra "caso" se aceptaría ✅ (la c y la s encajan donde el .)
+La palabra "cosa" no se aceptaría ❌ (la o y la a no tienen el orden correcto)
+La palabra "saco" se aceptaría ✅ (la s y la c encajan donde el .)
+La palabra "marco" no se aceptaría ❌ (el segundo . es un comodín para un carácter, rc son dos)
+La palabra " amo" se aceptaría ✅ (el carácter espacio en blanco también es un carácter)
+La palabra "amo" no se aceptaría ❌ (no hay un carácter antes de la a)-->
+
+<!--La palabra "cAsO" se aceptaría ✅
+La palabra "casO" se aceptaría ✅
+La palabra "cAso" se aceptaría ✅-->
+
+
+ | | | Js/Ad.JS | | |
+ var time = new Date();
+console.log(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
+
+let cadena = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, earum!"; 
+let expReg = new RegExp("lorem","g") //"g" = buscame todas las coincidencias
+let expReg = /lorem/; 
+
+console.log(expReg.test(cadena));
+console.log(expReg.exec(cabena)); 
