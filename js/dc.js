@@ -42,5 +42,59 @@ function validar (){
         return false;
     }
 
-    
+    if(!expresion.test(correo)){
+        correo.style.border = "1px solid red";
+        error_Mail.textContent = "Introduzca un correo váido";
+        error_Mail.style.color = "red";
+        correo.focus();
+        return false;
+    }
+
+    if(clave1.value==""){
+        clave1.style.border = "1px solid red";
+        error_pass1.textContent = "Contraseña requerida";
+        error_pass1.style.color="red";
+        clave1.focus();
+        return false;
+    }
+
+    if(!exp.match(clave1)){
+        clave1.style.border = "1px solid red";
+        error_pass1.textContent = "La contraseña debe contener al menos una mayuscula, al menos uan minuscula, al menos un digito y tener entre 8 y 16 carcateres";
+        error_pass1.style.color = "red";
+        clave1.focus();
+        return false;
+    }
+
+    if(clave1.value != clave2.value){
+        clave1.style.border = "1px solid red";
+        clave2.style.border = "1px solid red";
+        error_pass1.textContent = "No coinciden las contraseñas";
+        error_pass1.style.color = "red";
+        return false;
+    }
+}
+
+function nameVerify(){
+    if(nombre.value != ""){
+        nombre.style.border = "1px solid #5e6e66";
+        error.Nom.innerHTML = "";
+        return true;
+    }
+}
+
+function emailVerify(){
+    if(correo.value !=""){
+        correo.style.border = "1px solid #5e6e66"
+        error_Mail.innerHTML = "";
+        return true;
+    }
+}
+
+function passwordVerify(){
+    if(clave1.value != ""){
+        clave1.style.border = "1px solid #5e6e66";
+        error_pass1.innerHTML = "";
+        return true;
+    }
 }

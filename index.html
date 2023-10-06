@@ -7,8 +7,8 @@
     <title>Exp. Regulares</title>
 </head>
 <body>
- <h1>Prac.1</h1>
- <h2>EXPRESIONES REGULARES</h2>
+ <div align="center"> <h1>PRACTICA no.1.-</h1> </div>
+ <div align="center"> <h2>EXPRESIONES REGULARES</h2> </div>
  <p>Patrones para buscar, capturar o remplazar texto.</p>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
@@ -31,17 +31,21 @@
     <input type="email" id="user-email" name="userEmail"/>
     <inpur type="submit" value="Validate" onclick="return validateEmail()"/>
  </form>
- <script SRC="js/app.js"></script>
+ <!--<script SRC="js/app.js"></script>-->
 
  <!--__________________________________________-->
 
- <img src="https://i.pinimg.com/564x/9e/f1/3e/9ef13e494f952392f03658c035551440.jpg"/>
+ <div align="center"> <h2> E S P A C I O </h2> </div>
+
+ <!--__________________________________________-->
+
+ <img src="https://i.pinimg.com/564x/9e/f1/3e/9ef13e494f952392f03658c035551440.jpg" align="right"/>
 
   <!--__________________________________________-->
 
  <form class="flex-column flex-md-row" action="#" name="registro" id="registro" method="POST" enctype="multipart/form-data" autocomplete="off" onsubmit="return validar();">
     <div class="form-group row">
-        <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+        <label for="nombre" class="col-sm-2 col-form-label">👤 Nombre:</label>
         <div class="col-sm-10">
             <input type="text" class="form-control" id="nombre" placeholder="Nombre">
             <span id="Name_error"></span>
@@ -49,7 +53,7 @@
     </div>
 
     <div class="form-group row">
-        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <label for="email" class="col-sm-2 col-form-label">📧 Email:</label>
         <div class="col-sm-10">
             <input type="email" class="form-control" id="email" placeholder="Email">
             <span id="Mail_error"></span>
@@ -57,7 +61,7 @@
     </div>
 
     <div class="form-group row">
-        <label for="password" class="col-sm-2 col-form-label">Password</label>
+        <label for="password" class="col-sm-2 col-form-label">🔑 Password:</label>
         <div class="col-sm-10">
             <input type="password" class="form-control" id="pwd1" placeholder="Password">
             <span id="Clave_error"></span>
@@ -65,18 +69,12 @@
     </div>
 
     <div class="form-group row">
-        <label for="password" class="col-sm-2 col-form-label">Confirma Password</label>
+        <label for="password" class="col-sm-2 col-form-label">🔏 Confirma Password:</label>
         <div class="col-sm-10">
             <input type="password" class="form-control" id="pwd2" placeholder="Confirma Password">
-            <small id="passwordHelpInline" class="text-muted">8-16 caracteres, at least one number, at least one uppercase.</small><br>
+            <small id="passwordHelpInline" class="text-muted">8-16 caracteres, al menos un número, al menos una mayúscula.</small><br>
             <span id="Clave2_error"></span>
         </div>
-    </div>
-
-    <div class="custom-control custom-checkbox my-4">
-        <input class="custom-control-input" type="chechbox" id="gridCheck" name="acepto" value"yes">
-        <span id="Check_error"></span>
-        <label class="custom-control-label" for="gridCheck">Acepto<a href="">las condiciones de uso y privacidad</a><br><small>Debe aceptar antes de registrarse.</small></label>
     </div>
 
     <div class="custom-control custom-checkbox my-4">
@@ -86,13 +84,13 @@
     </div>
 
     <div class="form-group my-3">
-        <buttom type="submit" class="btn btn-outline-primary" id="btn">Registrarse</buttom>
-    </div>
+		<button type="submit" class="btn btn-outline-primary" id="btn">Registrarse</button>
+	</div>
+
  </form>
   <script SRC="js/dc.js"></script>
 
  <!--__________________________________________-->
-
 
 </body>
 </html>
