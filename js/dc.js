@@ -2,7 +2,7 @@ var nombre = document.forms["registro"]["nombre"];
 var correo = document.forms["registro"]["email"];
 var clave1 = document.forms["registro"]["pwd1"];
 var clave2 = document.forms["registro"]["pwd2"];
-var check = document.forms["resgistro"]["gridCheck"];
+var check = document.forms["registro"]["gridCheck"];
 
 var error_Nom = document.getElementById("Name_error");
 var error_Mail = document.getElementById("Mail_error");
@@ -10,8 +10,8 @@ var error_pass1 = document.getElementById("Clave1_error");
 var error_pass2 = document.getElementById("Clave2_error");
 var error_check = document.getElementById("Check_error");
 
-nombre.addEventlistener("blur", nameVerify, true);
-correo.addEventlistener("blur", emailVerify, true);
+nombre.addEventListener("blur", nameVerify, true);
+correo.addEventListener("blur", emailVerify, true);
 clave1.addEventListener("blur", passwordVerify, true);
 
 function validar (){
