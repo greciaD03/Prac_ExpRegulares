@@ -7,6 +7,9 @@
     <title>✂️</title>
 </head>
 <body>
+
+     <script src="js/color/app.js"></script>
+
  <div align="center"> <h1>PRACTICA no.1.-</h1> </div>
  <div align="center"> <h2>EXPRESIONES REGULARES</h2> </div>
  <p>Patrones para buscar, <p2>CAPTURAR</p2> o <p2>REEMPLAZAR</p2> texto.</p>
@@ -18,7 +21,13 @@
 __________________________________________-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-  <script>console.log("¡INICIO DE CONSOLA!")</script>
+  <script>
+    try {
+  consola('¡INICIO DE CONSOLA!');
+  } catch (e) {
+  console. log(`Error: ${e.mesage}`);
+  }
+  </script>
 
  <script>
     function pruebaemail (valor){ re = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/

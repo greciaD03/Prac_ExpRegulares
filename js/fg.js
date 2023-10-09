@@ -1,4 +1,8 @@
-console.log("        °o [| VAR |] o°")
+try {
+    consola('        °o [| VAR |] o°');
+    } catch (e) {
+    console. log(`Error: ${e.mesage}`);
+    }
 
 var saludar;
 saludar = "(MADRE): dice buenos dias."
@@ -24,8 +28,12 @@ console.log(saludar)
 //_________________________________________//
 //_________________________________________//
 
-console.log("        °o [| LET |] o°")
-
+try {
+    consola('        °o [| LET |] o°');
+    } catch (e) {
+    console. log(`Error: ${e.mesage}`);
+    }
+    
 let saludo = "dice Hola ¿como estas?";
 let hora = 4;
 
@@ -46,7 +54,11 @@ console.log(bienvenida); // "dice Hola"
 //_________________________________________//
 //_________________________________________//
 
-console.log("        °o [| CONST |] o°")
+try {
+    consola('        °o [| CONST |] o°');
+    } catch (e) {
+    console. log(`Error: ${e.mesage}`);
+    }
 
 const gesto = {
     carta: "dice Hola",
