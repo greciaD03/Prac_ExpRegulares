@@ -1,22 +1,68 @@
+console.log("        °o [| VAR |] o°")
+
 var saludar;
-    console.log(saludar); // saludar is undefined
-    saludar = "dice hola"
+saludar = "(MADRE): dice buenos dias."
+console.log(saludar); // saludar is undefined
 //________________________________________//
 
-var saludar = "hey, hola";
-var tiempos = 4;
+var saludar = "(MENOR): ¡Hey, buenos dias!";
+var tiempos = 2;
 
 if (tiempos > 3){
-    var saludar = "dice ¡Hola! tambien";}
+    var saludar = "¡Bueno dias! tambien.";}
 console.log(saludar)
 //_________________________________________//
 
-let saludar = "dice Hola";
-let tiempos = 4;
+var saludar = "hey, buenos dias!";
+var tiempos = 4;
+
+if (tiempos > 3){
+    var saludar = "(MAYOR): ¡Bueno dias! tambien.";}
+console.log(saludar)
+//_________________________________________//
+//_________________________________________//
+//_________________________________________//
+//_________________________________________//
+
+console.log("        °o [| LET |] o°")
+
+let saludo = "dice Hola ¿como estas?";
+let hora = 4;
 
 if (tiempos > 3) {
-     let hola = "dice Hola tambien";
-     console.log(hola);// "dice Hola tambien"
+     let hola = "Es MAYOR que 3. . .";
+     console.log(hola);
  }
-console.log(hola) // hola is not defined
+//_________________________________________//
 
+let bienvenida = "dice [2+2= 4]";
+if (true) {
+    let bienvenida = "dice [8/2= 4]"; 
+    console.log(bienvenida); // "dice Hola tambien"
+}
+console.log(bienvenida); // "dice Hola"
+//_________________________________________//
+//_________________________________________//
+//_________________________________________//
+//_________________________________________//
+
+console.log("        °o [| CONST |] o°")
+
+const gesto = {
+    carta: "dice Hola",
+    tiempos: 4
+}
+gesto.carta = "dice Hola tambien";
+//_________________________________________//
+
+const constante = 12;
+console.log("El valor de la constante es " + constante);
+try {
+    constante = 20;
+    console.log("El valor de la constante es " + constante);
+} catch (error) {
+    console.log("El valor de una constante no puede ser modificado: " + error);
+}
+
+// const b = 7;
+// document.writeln("a es " + b + ".");

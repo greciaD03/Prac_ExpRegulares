@@ -8,8 +8,8 @@ document.write(cadena + "<br>" + "<br>");
 
 texto = "Lorem ipsum dolor sit amet";
 texto = texto.replace(/([aei])/g, "<$1>");
-texto = texto.replace(/([aei])/g, "_$1"); 
-texto = texto.replace(/([aei])/g, "_X_");
+//texto = texto.replace(/([aei])/g, "_$1"); 
+//texto = texto.replace(/([aei])/g, "_X_");
 texto = document.write(texto); 
 
 //________________________________________________//
