@@ -43,20 +43,29 @@ try {
   console. log(`Error: ${e.mesage}`);
   }
 
-var myRe = /ab*/g;
-var str = "abbcdefabh";
-var myArray;
-while ((myArray = myRe.exec(str)) !== null) {
-  var msg = "Se ha encontrado " + myArray[0] + ". ";
-  msg += "La siguiente coincidencia empieza en el indice " + myRe.lastIndex;
+  var myRe = /ab*/g;
+  var str = "abbcdefabhabb";
+  var myArray;
+ while ((myArray = myRe.exec(str)) !== null) {
+  var msg = "Se ha encontrado: " + myArray[0] + ". ";
+  msg += "La siguiente COINCIDENCIA empieza en el INDICE " + myRe.lastIndex;
   console.log(msg);
 }
+//_______________________________________________//
 
 try {
   consola('[Test().]');
   } catch (e) {
   console. log(`Error: ${e.mesage}`);
   }
+
+  var cadena = "hello world!";
+  var result = /^hello/.test(cadena);
+  console.log(result); // 
+  
+  var cadena = "hello world!";
+  var result = /^my/.test(cadena);
+  console.log(result); // true
 
   function probarEntrada(regexp, cadena) {
     var subcadena;
@@ -67,94 +76,20 @@ try {
     }
     console.log(cadena + subcadena + regexp.source);
   }
+  //_______________________________________________//
 
-    try {
-      consola('[Match().]');
-      } catch (e) {
-      console. log(`Error: ${e.mesage}`);
-      }
+  try {
+    consola('[RegExp().]');
+    } catch (e) {
+    console. log(`Error: ${e.mesage}`);
+    }
 
-      const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
-      const regex = /[A-Z]/g;
-      const found = paragraph.match(regex);
+    "canciones".match(/[aeiou]/)
 
-      console.log(found);
-// Expected output: Array ["T", "I"]
+    /*var er = /ab+c/i; // notación literal
+    var er = new RegExp("ab+c", "i"); 
+    var er = new RegExp(/ab+c/, "i"); 
 
-      try {
-        consola('[MatchAll().]');
-        } catch (e) {
-        console. log(`Error: ${e.mesage}`);
-        }
+    var er = /\w+/;
+    var er = new RegExp("\\w+");*/
 
-        const regexp = /t(e)(st(\d?))/g;
-        const str = 'test1test2';
-
-        const array = [...str.matchAll(regexp)];
-
-        console.log(array[0]);
-// Expected output: Array ["test1", "e", "st1", "1"]
-
-        console.log(array[1]);
-// Expected output: Array ["test2", "e", "st2", "2"]
-
-        try {
-          consola('[Replace().]');
-          } catch (e) {
-          console. log(`Error: ${e.mesage}`);
-          }
-
-          const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
-
-          console.log(p.replace('dog', 'monkey'));
-// Expected output: "The quick brown fox jumps over the lazy monkey. If the dog reacted, was it really lazy?"
-
-          const regex = /Dog/i;
-          console.log(p.replace(regex, 'ferret'));
-// Expected output: "The quick brown fox jumps over the lazy ferret. If the dog reacted, was it really lazy?"
-
-
-          try {
-            consola('[ReplaceAll().]');
-            } catch (e) {
-            console. log(`Error: ${e.mesage}`);
-            }
-
-            const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
-
-            console.log(p.replaceAll('dog', 'monkey'));
-// Expected output: "The quick brown fox jumps over the lazy monkey. If the monkey reacted, was it really lazy?"
-
-// Global flag required when calling replaceAll with regex
-            const regex = /Dog/gi;
-            console.log(p.replaceAll(regex, 'ferret'));
-// Expected output: "The quick brown fox jumps over the lazy ferret. If the ferret reacted, was it really lazy?"
-
-
-            try {
-              consola('[Search().]');
-              } catch (e) {
-              console. log(`Error: ${e.mesage}`);
-              }
-
-              function testinput(re, str) {
-                var midstring;
-                if (str.search(re) != -1) {
-                  midstring = " contains ";
-                } else {
-                  midstring = " does not contain ";
-                }
-                console.log(str + midstring + re);
-              }
-
-              try {
-                consola('[Split().]');
-                } catch (e) {
-                console. log(`Error: ${e.mesage}`);
-                }
-
-                var str = "asdfghjkl";
-                strReverse = str.split("").reverse().join(""); // 'lkjhgfdsa'
-// split() retorna un array en el cual reverse() y join() pueden ser aplicados
-
-  console.log(" ");
